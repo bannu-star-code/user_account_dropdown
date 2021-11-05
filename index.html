@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="btn">
+            <div id="before">
+            </div>
+            <button id="log">Log in
+            </button>
+            <button id="register">register
+            </button>
+        </div>
+        <div id="cont1">
+            <h2>Login Page</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicin fuga nam beatae eaque enim neque ullam et, inv numquam, fuga adipisci! Minima, aliquam suscipit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cupiditate amet beatae nisi fugiat quipsam dolores, voluptatum perferolorum ea? Velit, exercitationem! Molestiae aspernatur pariatur veritatis quod magni, ar consequatur at tempore, voluptatibus molestiae eum nemo odit perspiciatis qui commodi voluptatem quod in, earum natus ea et eius cum corporis! Ab, impedit voluptas! Cumque tempore veniam consequatur!
+            </p>
+        </div>
+        <div id="cont2">
+            <h2>Register Page</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elullam et, inventore ad veritaspernatur niciatis consectetur numquam, fuga adipisci! Minima, aliquam suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eveniet quidem praesentium unde nam quia, error eius officiis sit. Nam optio ipsum blanditiis error laboriosam, hic impedit necessitatibus itaque ducimus vel pariasimilique alias reprehenderit. Ex amet dolores repellat voluptas, ipsa soluta praesentium voluptatibus reiciendis! Mollitia, laudantium doloribus? Laboriosam laborum, error obcaecati aliquid maiores sequi similique deserunt alias quaerat consequatur amet ex rerum repellendus ipsa inventore quae assumenda sapiente necessitatibus ad aut. Tempore, illum maxime?</p>
+        </div>
+    </div>
+
+    <script>
+        var cont1=document.getElementById('cont1');
+        var cont2=document.getElementById('cont2');
+
+        var log=document.getElementById("log");
+        var register=document.getElementById("register");
+        // var before=window.getComputedStyle(log,'::before')
+        var before=document.querySelector('#before')
+        console.log(before)
+
+        log.addEventListener('click',function() {
+            cont1.style.left ="5px";
+            cont2.style.left ="310px";
+            before.style.left="0%"
+            before.style.backgroundColor="RGB(247, 202, 201)"
+            
+            // register.style.backgroundColor='transparent'
+            log.style.backgroundColor='rgb(241, 134, 134);'
+        });
+        register.addEventListener('click',function() {
+            cont1.style.left ="-310px";
+            cont2.style.left ="5px";
+            // log.style.backgroundColor='transparent';
+            register.style.backgroundColor='rgb(241, 134, 134);'
+            before.style.left="50%";
+            before.style.backgroundColor="RGB(223, 207, 190)"
+            
+        });
+        
+    </script>
+</body>
+</html>
